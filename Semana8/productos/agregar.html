@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+    />
+    <title>Agregar producto</title>
+  </head>
+  <body class="bg-gray-100">
+    <form method="post" action="agregar.php" class="max-w-md mx-auto my-8">
+      <h1 class="text-center text-secondary text-3xl mb-8">Registro de Productos</h1>
+      <div class="mb-6">
+        <label for="Nombre" class="block text-gray-700 font-bold mb-2">Nombre del producto</label>
+        <input type="text" class="form-control w-full border border-gray-400 py-2 px-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="80" placeholder="Arroz" name="Nombre" id="Nombre" required>
+      </div>
+      <div class="mb-6">
+        <label for="Descripcion" class="block text-gray-700 font-bold mb-2">Descripción del producto</label>
+        <input type="text" class="form-control w-full border border-gray-400 py-2 px-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="250" placeholder="Descripcion" name="Descripcion" id="Descripcion">
+      </div>
+      <div class="mb-6">
+        <label for="Stock" class="block text-gray-700 font-bold mb-2">Stock</label>
+        <input type="number" class="form-control w-full border border-gray-400 py-2 px-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="50" name="Stock" id="Stock" required>
+      </div>
+      <div class="mb-6">
+        <label for="PrecioVenta" class="block text-gray-700 font-bold mb-2">Precio de Venta</label>
+        <input type="number" class="form-control w-full border border-gray-400 py-2 px-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="5.99" step="0.01" name="PrecioVenta" id="PrecioVenta" required>
+      </div>
+      <div class="flex justify-end items-center">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Guardar
+        </button>
+        <a href="productos.php" class="ml-4 py-2 px-4 rounded-md bg-gray-300 text-gray-700 font-semibold hover
+        -bg-gray-400">Regresar</a>
+        </div>
+      </form>
+  </body>
+</html>
